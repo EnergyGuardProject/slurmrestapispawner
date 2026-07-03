@@ -182,10 +182,6 @@ class SlurmRESTAPISpawner(Spawner):
         return f"""
 <div style="max-width: 400px; margin: auto;">
     <div style="margin-bottom: 1em;">
-        <label for="slurm-account">Account</label>
-        <input name="account" id="slurm-account" type="text" value="{s.account}" placeholder="Enter account" style="width: 100%;" />
-    </div>
-    <div style="margin-bottom: 1em;">
         <label for="slurm-partition">Partition</label>
         <input name="partition" id="slurm-partition" type="text" value="{s.partition}" placeholder="Enter partition" style="width: 100%;" />
     </div>
@@ -198,16 +194,8 @@ class SlurmRESTAPISpawner(Spawner):
         <input name="time_limit" id="slurm-time-limit" type="text" value="{s.time_limit}" placeholder="e.g., 02:00:00" style="width: 100%;" />
     </div>
     <div style="margin-bottom: 1em;">
-        <label for="slurm-token">Token</label>
-        <input name="slurm_token" id="slurm-token" type="password" value="{s.slurm_token}" placeholder="SLURM JWT token" style="width: 100%;" />
-    </div>
-    <div style="margin-bottom: 1em;">
         <label for="slurm-user">Slurm User</label>
         <input name="slurm_user" id="slurm-user" type="text" value="{s.slurm_user}" placeholder="Enter Slurm user" style="width: 100%;" />
-    </div>
-    <div style="margin-bottom: 1em;">
-        <label for="cwd">Current Working Directory</label>
-        <input name="current_working_directory" id="cwd" type="text" value="{s.current_working_directory}" placeholder="Enter working directory" style="width: 100%;" />
     </div>
 </div>
 """
