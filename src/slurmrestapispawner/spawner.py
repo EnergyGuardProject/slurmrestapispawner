@@ -193,10 +193,6 @@ class SlurmRESTAPISpawner(Spawner):
         <label for="slurm-time-limit">Time Limit</label>
         <input name="time_limit" id="slurm-time-limit" type="text" value="{s.time_limit}" placeholder="e.g., 02:00:00" style="width: 100%;" />
     </div>
-    <div style="margin-bottom: 1em;">
-        <label for="slurm-user">Slurm User</label>
-        <input name="slurm_user" id="slurm-user" type="text" value="{s.slurm_user}" placeholder="Enter Slurm user" style="width: 100%;" />
-    </div>
 </div>
 """
 
